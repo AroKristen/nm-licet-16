@@ -21,7 +21,7 @@ function StockTable({ stockItems, onRemoveItem, onDisplayItem }) {
               <td>{item.id}</td>
               <td>{item.itemName}</td>
               <td>{item.quantity}</td>
-              <td>${item.price.toFixed(2)}</td>
+              <td>${item.price}</td>
               <td>
                 <button onClick={() => onRemoveItem(item.id)}>Remove</button>
                 <button onClick={() => onDisplayItem(item.id)}>Display</button>
